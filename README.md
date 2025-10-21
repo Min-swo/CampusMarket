@@ -14,11 +14,19 @@ CampusMarket은 **AI 대화 분석 기반 중고거래 신뢰도 진단 서비�
 | 구분 | 기술 |
 |------|------|
 | **Frontend** | React, TypeScript, TailwindCSS |
-| **Backend** | Spring Boot (Java 17), RestTemplate, ObjectMapper |
+| **Backend** | Spring Boot (Java 17) |
 | **AI Model** | OpenAI API (ChatGPT-4o-mini) |
 | **Infra** | AWS EC2, Nginx, Docker |
 | **Database** | MySQL |
-| **CI/CD** | GitHub Actions |
+
+---
+
+## 서비스 화면
+
+<img width="558" height="391" alt="image" src="https://github.com/user-attachments/assets/33d95292-df03-4af0-b253-9ae0dcaf915c" />
+<img width="558" height="391" alt="image" src="https://github.com/user-attachments/assets/fc0f2054-d5c6-4823-8d0e-75b951036d0a" />
+
+<img width="565" height="406" alt="image" src="https://github.com/user-attachments/assets/0e8b7b04-eae2-42d0-83c8-a0fbecf8297d" />
 
 ---
 
@@ -47,13 +55,7 @@ CampusMarket은 **AI 대화 분석 기반 중고거래 신뢰도 진단 서비�
 
 ## ⚙️ 시스템 구조  
 
-```
-React (Frontend)
-    ↓ REST API
-Spring Boot (Backend)
-    ↓ HTTP 요청
-OpenAI API (ChatGPT-4o-mini)
-```
+<img width="493" height="311" alt="image" src="https://github.com/user-attachments/assets/09804f68-d4dd-4ec2-a050-688c2f887523" />
 
 ---
 
