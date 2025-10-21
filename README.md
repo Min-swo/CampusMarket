@@ -24,7 +24,6 @@ CampusMarket은 **AI 대화 분석 기반 중고거래 신뢰도 진단 서비�
 ## 서비스 화면
 
 <img width="558" height="391" alt="image" src="https://github.com/user-attachments/assets/33d95292-df03-4af0-b253-9ae0dcaf915c" />
-<img width="558" height="391" alt="image" src="https://github.com/user-attachments/assets/fc0f2054-d5c6-4823-8d0e-75b951036d0a" />
 
 <img width="565" height="406" alt="image" src="https://github.com/user-attachments/assets/0e8b7b04-eae2-42d0-83c8-a0fbecf8297d" />
 
