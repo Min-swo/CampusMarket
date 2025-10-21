@@ -3,8 +3,11 @@ import numpy as np
 import torch
 
 from openai import OpenAI
+from dotenv import load_dotenv
 
-OPEN_API_KEY = ""
+load_dotenv()
+openai_api_key = os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=openai_api_key)
 
 llm_model = "gpt-4o-mini"
 
@@ -39,9 +42,6 @@ def make_prompt(chat, ref_docs):
 
 def llm_request(model_name, prompt, max_tokens=150):
     try:
-        client = OpenAI(
-            api_key=OPEN_API_KEY,
-        )
         response = client.chat.completions.create(
             model=model_name,
             messages=[{"role": "system", "content": prompt}],

@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: campus-market-server
+
+  datasource:
+    url: jdbc:mysql://localhost:3309/campusmarketdb
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: true
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG

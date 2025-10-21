@@ -1,44 +1,42 @@
-```json
 {
-    "chat_room_id": "2",
-    "fraud_type": "FAKE_ESCROW",
-    "messages": [
-        {
-            "id": 1,
-            "sender_id": "0",
-            "content": "안녕하세요, 물건 아직 있나요?",
-            "timestamp": "2025-09-20T18:45:00"
-        },
-        {
-            "id": 2,
-            "sender_id": "1",
-            "content": "네, 아직 있습니다. 구매하실 건가요?",
-            "timestamp": "2025-09-20T18:46:00"
-        },
-        {
-            "id": 3,
-            "sender_id": "0",
-            "content": "네, 구매하고 싶어요. 안전하게 거래할 수 있나요?",
-            "timestamp": "2025-09-20T18:47:00"
-        },
-        {
-            "id": 4,
-            "sender_id": "1",
-            "content": "물론이죠! 제가 안전결제 링크를 보내드릴게요. 이 링크를 통해 결제하시면 됩니다: [short.link/safe-pay]",
-            "timestamp": "2025-09-20T18:48:00"
-        },
-        {
-            "id": 5,
-            "sender_id": "0",
-            "content": "음... 이 링크가 안전한 건가요? 조금 의심스러워서요.",
-            "timestamp": "2025-09-20T18:49:00"
-        },
-        {
-            "id": 6,
-            "sender_id": "1",
-            "content": "걱정 마세요! 많은 분들이 이 방식으로 안전하게 거래하셨어요. 믿고 이용하셔도 됩니다.",
-            "timestamp": "2025-09-20T18:50:00"
-        }
-    ]
+"chat_room_id": "2",
+"fraud_type": "FAKE_ESCROW",
+"messages": [
+    {
+        "id": 1,
+        "sender_id": "0",
+        "content": "안녕하세요, 물건 아직 있나요?",
+        "timestamp": "2025-09-20T18:45:00"
+    },
+    {
+        "id": 2,
+        "sender_id": "1",
+        "content": "네, 아직 있어요. 구매하시겠어요?",
+        "timestamp": "2025-09-20T18:46:00"
+    },
+    {
+        "id": 3,
+        "sender_id": "0",
+        "content": "네, 구매하고 싶습니다. 어떻게 결제할까요?",
+        "timestamp": "2025-09-20T18:47:00"
+    },
+    {
+        "id": 4,
+        "sender_id": "1",
+        "content": "안전결제를 위해 제가 에스크로 결제창 링크를 보내드릴게요. 여기서 진행하시면 안전합니다: http://safe-payments-shop.link",
+        "timestamp": "2025-09-20T18:48:00"
+    },
+    {
+        "id": 5,
+        "sender_id": "0",
+        "content": "음... 링크가 좀 이상해 보이는데요. 공식 사이트 맞나요?",
+        "timestamp": "2025-09-20T18:49:00"
+    },
+    {
+        "id": 6,
+        "sender_id": "1",
+        "content": "네, 절대 안전합니다. 많은 분들이 이용하고 있어요. 안심하고 진행하세요.",
+        "timestamp": "2025-09-20T18:50:00"
+    }
+]
 }
-```

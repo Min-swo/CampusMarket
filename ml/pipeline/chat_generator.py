@@ -108,7 +108,8 @@ def generate_responses(index, rule):
         사람이 실제로 대화하는 것처럼 자연스럽게 이어지는 1:1 채팅을 만들어주세요.
 
         [조건]
-        - JSON 형식으로만 출력해야 합니다.
+        - 완전한 JSON 형식으로만 출력해야 합니다.
+        - 코드블록(````json`) 같은 마크다운 문법은 절대 포함하지 마세요.
         - chat_room_id는 "{index}"로 고정합니다.
         - fraud_type은 "{fraud_rules[rule]['code']}"로 설정합니다.
         - sender_id는 0(피해자), 1(사기꾼) 두 가지입니다.
@@ -124,24 +125,24 @@ def generate_responses(index, rule):
 
         [출력 형식]
         {{
-        "chat_room_id": "{index}",
-        "fraud_type": "{fraud_rules[rule]['code']}",
-        "messages": [
-            {{
-            "id": 1,
-            "sender_id": "0",
-            "content": "안녕하세요, 물건 아직 있나요?",
-            "timestamp": "2025-09-20T18:45:00"
-            }},
-            ...
-        ]
+            "chat_room_id": "{index}",
+            "fraud_type": "{fraud_rules[rule]['code']}",
+            "messages": [
+                {{
+                "id": 1,
+                "sender_id": "0",
+                "content": "안녕하세요, 물건 아직 있나요?",
+                "timestamp": "2025-09-20T18:45:00"
+                }},
+                ...
+            ]
         }}
     """
     response = client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.7,
-        max_tokens=2000
+        temperature=0.0,
+        max_tokens=1000
     )
 
     return response.choices[0].message.content
@@ -168,8 +169,8 @@ def process_files(start: int, end: int, rule):
 
 if __name__ == "__main__":
     # 👇 여기에서 시작~끝 파일 번호 지정 (예: 22~23)
-    start_file = 0
-    end_file = 4
-    rule = [2, 3, 4, 5, 6, 7, 8]
+    start_file = 5
+    end_file = 50
+    rule = [0, 1, 2, 3, 4, 5, 6, 7, 8]
 
     process_files(start=start_file, end=end_file, rule=rule)

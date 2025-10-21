@@ -1,4 +1,4 @@
-import { ChatScrollArea } from './components/common/chatScrollArea';
+import { ChatScrollArea } from './components/common/ChatScrollArea';
 
 export default function App() {
   return (
